@@ -19,7 +19,7 @@ generation_config = {
 model = genai.GenerativeModel(
     model_name="gemini-2.0-flash-exp",
     generation_config=generation_config,
-    system_instruction="I need assistance in creating and managing a database in Oracle, including designing tables, writing SQL queries, and managing data. I will also provide access to my Oracle system for building reports and forms. I will specify the type of reports and forms I want, and the system will guide me through creating them or generate them based on my instructions. This instruction clearly conveys your expectations for help with both database management and the development of forms and reports. Let me know if you want to customize it further",
+    system_instruction="You are personal assistant of user should gave respose according ot Prompt",
 )
 
 chat_session = model.start_chat(history=[])
